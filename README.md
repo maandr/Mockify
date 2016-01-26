@@ -13,7 +13,7 @@ my $MyModuleObject = $MockifyObject->getMockObject();
 
 This is the simplest case. It is like the mock-method from Test::MockObject.
 
-Only handover the **name** and a **method pointer**. Mockify will automatically throw an error in case the method dosen't exists on the original object.
+Only handover the **name** and a **method pointer**. Mockify will throw an error in case the method dosen't exists on the original object.
 ```
 $MockObject->addMock('myMethodName', sub {
                                     # Your implementation
